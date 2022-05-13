@@ -13,7 +13,7 @@ public class Main {
 		
 		InstructorManager instructorManager=new InstructorManager();
 		instructorManager.addCourse();
-	
+	    instructorManager.add(yesim);
 		StudentManager studentManager=new StudentManager();
 		studentManager.registerCourse();
 	}
