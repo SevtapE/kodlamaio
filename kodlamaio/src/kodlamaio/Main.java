@@ -16,6 +16,13 @@ public class Main {
 	    instructorManager.add(yesim);
 		StudentManager studentManager=new StudentManager();
 		studentManager.registerCourse();
+		
+		System.out.println("UserManager array");
+		UserManager[] userManagers=new UserManager[] {new InstructorManager(),new StudentManager()};
+		
+		for(UserManager userManager:userManagers) {
+			userManager.add(new User());
+		}
 	}
 
 }
